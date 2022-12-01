@@ -1,0 +1,244 @@
+
+> drift-binance-arb@1.0.0 refactor
+> ts-node ./src/refactor.ts
+
+Building drift client
+Drift client built
+Building drift user
+Drift user built
+Initial delta: 0
+Current time: 5:15:54 AM
+--------------------
+drift_mark_price=13.933206, dydx_mark=13.9845, price_diff=0.051
+drift_position=0, dydx_position=0
+Attempting to open arb position
+Placing order on drift { long: {} } size 1
+Base Amount after drift order: drift=0, dydx=0
+Placing dydx market order { short: {} } at quantity 1
+Current delta: 0
+Attempting to close position
+Mark difference too large to close position or no open position
+--------------------
+Current time: 5:16:14 AM
+--------------------
+drift_mark_price=13.933438, dydx_mark=13.9835, price_diff=0.05
+drift_position=1, dydx_position=-1
+Attempting to open arb position
+Could not buy on drift due to risk limits
+
+Attempting to close position
+Mark difference too large to close position or no open position
+--------------------
+Current time: 5:16:34 AM
+--------------------
+drift_mark_price=13.933438, dydx_mark=13.992, price_diff=0.059
+drift_position=1, dydx_position=-1
+Attempting to open arb position
+Could not buy on drift due to risk limits
+
+Attempting to close position
+Mark difference too large to close position or no open position
+--------------------
+Current time: 5:16:54 AM
+--------------------
+drift_mark_price=13.933438, dydx_mark=13.9865, price_diff=0.053
+drift_position=1, dydx_position=-1
+Attempting to open arb position
+Could not buy on drift due to risk limits
+
+Attempting to close position
+Mark difference too large to close position or no open position
+--------------------
+Current time: 5:17:14 AM
+--------------------
+drift_mark_price=13.933438, dydx_mark=13.985, price_diff=0.052
+drift_position=1, dydx_position=-1
+Attempting to open arb position
+Could not buy on drift due to risk limits
+
+Attempting to close position
+Mark difference too large to close position or no open position
+--------------------
+Current time: 5:17:34 AM
+--------------------
+drift_mark_price=13.93419, dydx_mark=13.982, price_diff=0.048
+drift_position=1, dydx_position=-1
+Attempting to open arb position
+Mark differences too small to enter
+Attempting to close position
+Mark difference too large to close position or no open position
+--------------------
+Current time: 5:17:54 AM
+--------------------
+drift_mark_price=13.93419, dydx_mark=13.9805, price_diff=0.046
+drift_position=1, dydx_position=-1
+Attempting to open arb position
+Mark differences too small to enter
+Attempting to close position
+Mark difference too large to close position or no open position
+--------------------
+Current time: 5:18:14 AM
+--------------------
+drift_mark_price=13.93419, dydx_mark=13.985, price_diff=0.051
+drift_position=1, dydx_position=-1
+Attempting to open arb position
+Could not buy on drift due to risk limits
+
+Attempting to close position
+Mark difference too large to close position or no open position
+--------------------
+Current time: 5:18:34 AM
+--------------------
+drift_mark_price=13.93419, dydx_mark=13.985, price_diff=0.051
+drift_position=1, dydx_position=-1
+Attempting to open arb position
+Could not buy on drift due to risk limits
+
+Attempting to close position
+Mark difference too large to close position or no open position
+--------------------
+Current time: 5:18:54 AM
+--------------------
+drift_mark_price=13.935046, dydx_mark=13.983, price_diff=0.048
+drift_position=1, dydx_position=-1
+Attempting to open arb position
+Mark differences too small to enter
+Attempting to close position
+Mark difference too large to close position or no open position
+--------------------
+Current time: 5:19:14 AM
+--------------------
+drift_mark_price=13.935046, dydx_mark=13.975, price_diff=0.04
+drift_position=1, dydx_position=-1
+Attempting to open arb position
+Mark differences too small to enter
+Attempting to close position
+Mark difference too large to close position or no open position
+--------------------
+Current time: 5:19:34 AM
+--------------------
+drift_mark_price=13.935046, dydx_mark=13.974499999999999, price_diff=0.039
+drift_position=1, dydx_position=-1
+Attempting to open arb position
+Mark differences too small to enter
+Attempting to close position
+Mark difference too large to close position or no open position
+--------------------
+Current time: 5:19:54 AM
+--------------------
+drift_mark_price=13.935046, dydx_mark=13.975999999999999, price_diff=0.041
+drift_position=1, dydx_position=-1
+Attempting to open arb position
+Mark differences too small to enter
+Attempting to close position
+Mark difference too large to close position or no open position
+--------------------
+Current time: 5:20:14 AM
+--------------------
+drift_mark_price=13.935046, dydx_mark=13.967, price_diff=0.032
+drift_position=1, dydx_position=-1
+Attempting to open arb position
+Mark differences too small to enter
+Attempting to close position
+Mark difference too large to close position or no open position
+--------------------
+Current time: 5:20:34 AM
+--------------------
+drift_mark_price=13.9354, dydx_mark=13.962, price_diff=0.027
+drift_position=1, dydx_position=-1
+Attempting to open arb position
+Mark differences too small to enter
+Attempting to close position
+Placing order on drift { short: {} } size 1
+Attempted to place order but failed
+Error: failed to get recent blockhash: FetchError: request to https://api.mainnet-beta.solana.com/ failed, reason: connect ECONNREFUSED 74.118.143.47:443
+    at Connection.getRecentBlockhash (/home/ubuntu/grant_work/drift_dydx_arb/drift-binance-arb/node_modules/@solana/web3.js/src/connection.ts:3855:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async RetryTxSender.prepareTx (/home/ubuntu/grant_work/drift_dydx_arb/drift-binance-arb/node_modules/@drift-labs/sdk/lib/tx/retryTxSender.js:79:31)
+    at async RetryTxSender.send (/home/ubuntu/grant_work/drift_dydx_arb/drift-binance-arb/node_modules/@drift-labs/sdk/lib/tx/retryTxSender.js:26:13)
+    at async DriftClient.placeAndTakePerpOrder (/home/ubuntu/grant_work/drift_dydx_arb/drift-binance-arb/node_modules/@drift-labs/sdk/lib/driftClient.js:1454:33)
+--------------------
+Current time: 5:20:54 AM
+--------------------
+drift_mark_price=13.9354, dydx_mark=13.974499999999999, price_diff=0.039
+drift_position=1, dydx_position=-1
+Attempting to open arb position
+Mark differences too small to enter
+Attempting to close position
+Mark difference too large to close position or no open position
+--------------------
+Current time: 5:21:14 AM
+--------------------
+drift_mark_price=13.9354, dydx_mark=13.973500000000001, price_diff=0.038
+drift_position=1, dydx_position=-1
+Attempting to open arb position
+Mark differences too small to enter
+Attempting to close position
+Mark difference too large to close position or no open position
+--------------------
+Current time: 5:21:34 AM
+--------------------
+drift_mark_price=13.9354, dydx_mark=13.974, price_diff=0.039
+drift_position=1, dydx_position=-1
+Attempting to open arb position
+Mark differences too small to enter
+Attempting to close position
+Mark difference too large to close position or no open position
+--------------------
+Current time: 5:21:54 AM
+--------------------
+drift_mark_price=13.935997, dydx_mark=13.9685, price_diff=0.033
+drift_position=1, dydx_position=-1
+Attempting to open arb position
+Mark differences too small to enter
+Attempting to close position
+Mark difference too large to close position or no open position
+--------------------
+Current time: 5:22:14 AM
+--------------------
+drift_mark_price=13.935997, dydx_mark=13.972000000000001, price_diff=0.036
+drift_position=1, dydx_position=-1
+Attempting to open arb position
+Mark differences too small to enter
+Attempting to close position
+Mark difference too large to close position or no open position
+--------------------
+Current time: 5:22:34 AM
+--------------------
+drift_mark_price=13.935997, dydx_mark=13.962499999999999, price_diff=0.027
+drift_position=1, dydx_position=-1
+Attempting to open arb position
+Mark differences too small to enter
+Attempting to close position
+Placing order on drift { short: {} } size 1
+Base Amount after drift order: drift=1, dydx=-1
+Placing dydx market order { long: {} } at quantity 1
+Current delta: 0
+--------------------
+Current time: 5:22:54 AM
+--------------------
+drift_mark_price=13.936443, dydx_mark=13.9695, price_diff=0.033
+drift_position=0, dydx_position=0
+Attempting to open arb position
+Mark differences too small to enter
+Attempting to close position
+Mark difference too large to close position or no open position
+--------------------
+Current time: 5:23:14 AM
+--------------------
+drift_mark_price=13.936443, dydx_mark=13.976500000000001, price_diff=0.04
+drift_position=0, dydx_position=0
+Attempting to open arb position
+Mark differences too small to enter
+Attempting to close position
+Mark difference too large to close position or no open position
+--------------------
+Current time: 5:23:34 AM
+--------------------
+drift_mark_price=13.936443, dydx_mark=13.9795, price_diff=0.043
+drift_position=0, dydx_position=0
+Attempting to open arb position
+Mark differences too small to enter
+Attempting to close position
+Mark difference too large to close position or no open position
+--------------------

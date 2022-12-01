@@ -1,0 +1,35 @@
+{
+  "name": "drift-binance-arb",
+  "version": "1.0.0",
+  "description": "📈Arbitrage Bot, trading between Drift v2 and Dydx exchanges!",
+  "main": "index.ts",
+  "scripts": {
+    "start": "ts-node ./src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CHK-Ventures/drift-dydx-arb.git"
+  },
+  "keywords": [],
+  "author": "CHK",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CHK-Ventures/drift-dydx-arb/issues"
+  },
+  "homepage": "https://github.com/CHK-Ventures/drift-dydx-arb#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "@binance/connector": "^2.0.0-rc.3",
+    "@drift-labs/sdk": "^2.0.13",
+    "@dydxprotocol/v3-client": "^1.14.0"
+  },
+  "prettier": {
+    "printWidth": 120
+  }
+}
